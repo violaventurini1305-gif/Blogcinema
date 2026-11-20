@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotogramma - Blog di cinema</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="barra">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-4">
+                    <a href="#home" class="logo">Foto<span>gramma</span></a>
+                </div>
+                <div class="col-12 col-md-8">
+                    <ul class="menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#film">Film</a></li>
+                        <li><a href="#lavora">Lavora con noi</a></li>
+                        <li><a href="#contatti">Contatti</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- header -->
+    <header id="home" class="hero">
+        <div class="container h-hero">
+            <div class="row h-hero align-items-center justify-content-center">
+                <div class="col-12 col-lg-8 centrato">
+                    <h1 class="titolo-hero">Fotogramma</h1>
+                    <p class="sottotitolo-hero">Il blog per chi ama il cinema</p>
+                    <a href="#film" class="bottone">Scopri i film</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- film -->
+    <section id="film" class="sezione">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 centrato">
+                    <h2 class="titolo-sezione">I nostri film</h2>
+                    <p class="testo-grigio">Tre film, tre generi diversi</p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="film">
+                        <a href="https://www.rottentomatoes.com" target="_blank">
+                            <img src="img/interstellar.jpg" alt="Interstellar">
+                        </a>
+                        <div class="film-testo">
+                            <span class="genere">Fantascienza</span>
+                            <h3>Interstellar</h3>
+                            <p>La Terra sta morendo e un gruppo di astronauti parte alla ricerca di un nuovo pianeta. Un film che parla di spazio, di tempo e del rapporto tra un padre e sua figlia.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="film">
+                        <a href="https://www.rottentomatoes.com" target="_blank">
+                            <img src="img/parasite.jpg" alt="Parasite">
+                        </a>
+                        <div class="film-testo">
+                            <span class="genere">Thriller</span>
+                            <h3>Parasite</h3>
+                            <p>Una famiglia povera riesce a farsi assumere, uno alla volta, da una famiglia ricchissima. Ha vinto l'Oscar come miglior film nel 2020.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-0">
+                    <div class="film">
+                        <a href="https://www.rottentomatoes.com" target="_blank">
+                            <img src="img/citta-incantata.webp" alt="La città incantata">
+                        </a>
+                        <div class="film-testo">
+                            <span class="genere">Animazione</span>
+                            <h3>La città incantata</h3>
+                            <p>Chihiro si ritrova in un mondo pieno di spiriti e deve trovare il modo di salvare i suoi genitori. Uno dei film più belli dello Studio Ghibli.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- form lavora con noi -->
+    <section id="lavora" class="sezione sezione-scura">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <h2 class="titolo-sezione centrato">Lavora con noi</h2>
+                    <p class="testo-grigio centrato">Ti piace scrivere di cinema? Lasciaci i tuoi dati e ti ricontattiamo.</p>
+
+                    <form id="form" class="form">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="La tua email" required>
+
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="La tua password" required>
+
+                        <button type="submit" class="bottone">Invia</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="contatti" class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <a href="#home" class="logo">Foto<span>gramma</span></a>
+                    <p class="testo-grigio">Blog di recensioni e consigli sui film.</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <h4>Chi siamo</h4>
+                    <p class="testo-grigio">
+                        Fotogramma di Mario Rossi<br>
+                        Via del Cinema 24, Roma<br>
+                        info@fotogramma.it<br>
+                        P.IVA 01234567890
+                    </p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <h4>Seguici</h4>
+                    <div class="social">
+                        <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.youtube.com" target="_blank"><i class="bi bi-youtube"></i></a>
+                        <a href="https://www.tiktok.com" target="_blank"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="copyright">© 2026 Fotogramma - Tutti i diritti riservati</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- modal -->
+    <div class="modal fade" id="modalGrazie" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content finestra">
+                <div class="modal-body centrato">
+                    <i class="bi bi-film icona-modal"></i>
+                    <p>Grazie per averci contattato</p>
+                    <button type="button" class="bottone" data-bs-dismiss="modal">Chiudi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let form = document.getElementById('form');
+        let modal = new bootstrap.Modal(document.getElementById('modalGrazie'));
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            modal.show();
+            form.reset();
+        });
+    </script>
+</body>
+</html>

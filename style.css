@@ -1,0 +1,282 @@
+:root {
+    --nero: #0e0e10;
+    --grigio-scuro: #17171b;
+    --bianco: #e9e6e0;
+    --grigio: #9a968f;
+    --oro: #e5b33c;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--nero);
+    color: var(--bianco);
+}
+
+a {
+    color: var(--bianco);
+    text-decoration: none;
+}
+
+.centrato {
+    text-align: center;
+}
+
+.testo-grigio {
+    color: var(--grigio);
+}
+
+/* navbar */
+.barra {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    background-color: rgba(14, 14, 16, 0.9);
+    z-index: 100;
+}
+
+.logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: var(--oro);
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.menu a {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.menu a:hover {
+    color: var(--oro);
+}
+
+/* header */
+.hero {
+    height: 100vh;
+    background-image: linear-gradient(rgba(14, 14, 16, 0.6), var(--nero)), url('img/hero.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+.h-hero {
+    height: 100%;
+}
+
+.titolo-hero {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 110px;
+    letter-spacing: 4px;
+    margin-bottom: 0;
+}
+
+.sottotitolo-hero {
+    font-size: 20px;
+    color: var(--grigio);
+    margin-bottom: 40px;
+}
+
+.bottone {
+    display: inline-block;
+    padding: 12px 35px;
+    background-color: var(--oro);
+    color: var(--nero);
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.bottone:hover {
+    background-color: #c4952a;
+    color: var(--nero);
+}
+
+/* sezioni */
+.sezione {
+    padding: 100px 0;
+}
+
+.sezione-scura {
+    background-color: var(--grigio-scuro);
+}
+
+.titolo-sezione {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+.sezione .testo-grigio {
+    margin-bottom: 40px;
+}
+
+/* card film */
+.film {
+    background-color: var(--grigio-scuro);
+    height: 100%;
+}
+
+.film img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+.film img:hover {
+    opacity: 0.8;
+}
+
+.film-testo {
+    padding: 20px;
+}
+
+.film-testo h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+.film-testo p {
+    color: var(--grigio);
+}
+
+.genere {
+    display: inline-block;
+    padding: 3px 10px;
+    margin-bottom: 10px;
+    background-color: var(--oro);
+    color: var(--nero);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* form */
+.form label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--grigio);
+}
+
+.form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: var(--nero);
+    border: 1px solid #333;
+    color: var(--bianco);
+}
+
+.form input:focus {
+    outline: none;
+    border-color: var(--oro);
+}
+
+.form .bottone {
+    width: 100%;
+}
+
+/* footer */
+.footer {
+    padding: 60px 0 20px;
+}
+
+.footer h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--oro);
+}
+
+.footer .logo {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.social a {
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.social a:hover {
+    color: var(--oro);
+}
+
+.copyright {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    text-align: center;
+    color: var(--grigio);
+    font-size: 14px;
+}
+
+/* modal */
+.finestra {
+    background-color: var(--grigio-scuro);
+    color: var(--bianco);
+    padding: 20px;
+}
+
+.icona-modal {
+    font-size: 50px;
+    color: var(--oro);
+}
+
+/* responsive */
+@media (max-width: 991px) {
+    .titolo-hero {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 767px) {
+    .barra {
+        text-align: center;
+    }
+
+    .menu {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    html {
+        scroll-padding-top: 110px;
+    }
+
+    .titolo-hero {
+        font-size: 60px;
+    }
+
+    .titolo-sezione {
+        font-size: 40px;
+    }
+
+    .sezione {
+        padding: 70px 0;
+    }
+
+    .film img {
+        height: 350px;
+    }
+}
